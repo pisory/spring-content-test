@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+ =====自己写一个IOC注入=========
+    1、那些类需要有关联
+    2、怎么告诉我这些类
+    3、怎么维护依赖这些类
+    4、怎么体现setter或者constructor
+-->
+<beans>
+
+    <bean id="dao" class="com.spring.sources.code.ioc.first.dao.UserDaoImpl"></bean>
+    <bean id="service" class="com.spring.sources.code.ioc.first.service.UserServiceImpl">
+        <!-- setter注入 -->
+        <!-- 第一个dao是一个注入的dao的方法的名称，第二个dao是代表上面的dao的bean -->
+        <property name="dao" ref="dao"></property>
+    </bean>
+
+</beans>

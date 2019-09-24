@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+</beans>-->
+
+<!--
+    1、哪些类需要我关联
+    2、怎么告诉我这些类(写bean)
+    3、怎么维护依赖关系(setter,constructor)
+    4、怎么体现setter或constructor
+
+    答:
+    1：有两个bean，分别是UserDao -> UserDaoImpl 和  UserService -> UserServiceImpl
+    2：在xml里面指定bean的id 和class
+    3：UserService 依赖了 UserDao,在bean中指定依赖ref的id
+    4:通过ref="被依赖的id" =》 ref="dao"
+
+ -->
+<beans >
+    <bean id="dao" class="com.dada.inject.dao.UserDaoImpl"></bean>
+
+    <!-- setter: service 依赖了 dao，通过两者的id来指定依赖-->
+    <bean id="service" class="com.dada.inject.service.UserServiceImpl">
+        <property ref="dao"></property>
+    </bean>
+</beans>

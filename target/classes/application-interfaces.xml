@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+    <!-- 这个application.xml文件只对 com.dada.bean.third.interfaces  这个包以及这个包一下的包使用，其他地方都与这个文件无关-->
+    <!-- 定义一个bean，id可以随便起，但class要指定bean的类(非接口)或它的实现类 -->
+    <bean id="userService" class="com.dada.bean.third.interfaces.service.impl.UserServiceImpl"/>
+</beans>
