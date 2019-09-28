@@ -14,6 +14,7 @@ public class Test {
                 return 100000;
             }
 
+            @Override
             public String getName() {
                 return "大雁";
             }

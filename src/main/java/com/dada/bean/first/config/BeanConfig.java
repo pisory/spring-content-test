@@ -1,7 +1,6 @@
 package com.dada.bean.first.config;
 
-import com.dada.bean.first.bean.UserBean;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -10,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
+@ComponentScan("com.dada.bean.first")
 public class BeanConfig {
 
 }

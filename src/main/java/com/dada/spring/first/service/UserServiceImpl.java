@@ -14,9 +14,9 @@ public class UserServiceImpl implements UserService {
     /**
      * 构造器注入
      */
-    public UserServiceImpl(UserDao dao) {
+   /* public UserServiceImpl(UserDao dao) {
         this.dao = dao;
-    }
+    }*/
 
     @Override
     public void find() {
@@ -30,4 +30,5 @@ public class UserServiceImpl implements UserService {
     public void setDao(UserDao dao) {
         this.dao = dao;
     }
+
 }

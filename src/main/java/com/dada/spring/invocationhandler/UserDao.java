@@ -1,4 +1,4 @@
-package com.dada.test.invocationhandler;
+package com.dada.spring.invocationhandler;
 
 public interface UserDao {
     public abstract void add();

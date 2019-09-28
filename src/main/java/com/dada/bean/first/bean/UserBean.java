@@ -1,6 +1,5 @@
 package com.dada.bean.first.bean;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,6 +10,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserBean {
     public UserBean(){
-        System.out.println("userBean init");
+        System.out.println("begin init userBean ......");
     }
 }

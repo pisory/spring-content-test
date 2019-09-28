@@ -9,8 +9,8 @@
 -->
 <beans>
 
-    <bean id="dao" class="com.spring.sources.code.ioc.first.dao.UserDaoImpl"></bean>
-    <bean id="service" class="com.spring.sources.code.ioc.first.service.UserServiceImpl">
+    <bean id="dao" class="com.dada.spring.first.dao.UserDaoImpl"></bean>
+    <bean id="service" class="com.dada.spring.first.service.UserServiceImpl">
         <!-- setter注入 -->
         <!-- 第一个dao是一个注入的dao的方法的名称，第二个dao是代表上面的dao的bean -->
         <property name="dao" ref="dao"></property>

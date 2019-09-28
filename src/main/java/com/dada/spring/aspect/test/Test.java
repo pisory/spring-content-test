@@ -1,10 +1,8 @@
-package com.work.aop.first.test;
+package com.dada.spring.aspect.test;
 
-import com.work.aop.first.config.AppConfig;
-import com.work.aop.first.service.Service;
-import org.springframework.context.ApplicationContext;
+import com.dada.spring.aspect.config.AppConfig;
+import com.dada.spring.aspect.service.Service;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author zhoudahua

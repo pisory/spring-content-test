@@ -1,4 +1,4 @@
-package com.dada.test.invocationhandler;
+package com.dada.spring.invocationhandler;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

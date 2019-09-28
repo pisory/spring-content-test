@@ -1,4 +1,4 @@
-package com.work.aop.first.service;
+package com.dada.spring.aspect.service;
 
 public interface Service {
     void say();

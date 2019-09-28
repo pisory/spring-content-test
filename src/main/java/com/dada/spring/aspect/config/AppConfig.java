@@ -1,4 +1,4 @@
-package com.work.aop.first.config;
+package com.dada.spring.aspect.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

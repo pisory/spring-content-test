@@ -1,6 +1,4 @@
-package com.dada.algorithm.sort.second;
-
-import java.util.Arrays;
+package com.dada.zalgorithm.sort.second;
 
 /**
  * @author zhoudahua

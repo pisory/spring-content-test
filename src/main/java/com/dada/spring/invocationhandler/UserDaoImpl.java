@@ -1,4 +1,4 @@
-package com.dada.test.invocationhandler;
+package com.dada.spring.invocationhandler;
 
 public class UserDaoImpl implements UserDao {
     @Override

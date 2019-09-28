@@ -1,4 +1,4 @@
-package com.dada.algorithm.array;
+package com.dada.zalgorithm.array;
 
 /**
  * 二维数组的查找

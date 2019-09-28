@@ -1,4 +1,4 @@
-package com.dada.algorithm.sort.first;
+package com.dada.zalgorithm.sort.first;
 
 import java.util.Arrays;
 

@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 使用xml文件注册bean，并调用bean的方法
  * @author zhoudahua
  * @date 2019/5/30
  * @description

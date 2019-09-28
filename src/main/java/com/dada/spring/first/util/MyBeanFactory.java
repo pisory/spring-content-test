@@ -39,6 +39,9 @@ public class MyBeanFactory {
              * 得到根目录，beans
              */
             String path = this.getClass().getResource("/").getPath() + File.separator + xml;
+            if("/".equals(path.substring(0,1))) {
+                path = path.substring(1);
+            }
             File file = new File(path);
             SAXReader reader = new SAXReader();
             Document document = reader.read(file);

@@ -1,6 +1,7 @@
 package com.dada.spring.practice.test2;
 
 public class Child extends Base{
+    @Override
     void test() {
         System.out.println(" Child.test()");
     }

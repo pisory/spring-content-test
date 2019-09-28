@@ -5,6 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * 使用@Configutation + @ComponentScan注解
+ * 扫描加载注解指定包名下的所有的bean
  * @author zhoudahua
  * @date 2019/5/27
  * @description

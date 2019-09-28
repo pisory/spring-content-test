@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@ComponentScan("com.dada.third")
+@ComponentScan("com.dada.spring.db")
 @EnableDynamicDB(name="zhoudahua",password = "123456",url = "linux")
 public class ThirdAppConfig {
 }

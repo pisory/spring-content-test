@@ -2,6 +2,7 @@ package com.dada.spring.practice.test1;
 
 public class Test extends A{
 
+    @Override
     public int test(int a, int b){
         return 0;
     }
