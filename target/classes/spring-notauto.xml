@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+            default-autowire="byType"
+>
+    <!--default-autowire="byType/byName" 自动注入，byType时，setter方法名字可以随便起，因为它是通过类类型去匹配的
+        byName时，setter方法要和bean的id一致，因为是根据setter名字和id名字匹配的 -->
+    <bean id="userService" class="com.spring.autowired.notauto.UserService"></bean>
+
+    <bean id="personService" class="com.spring.autowired.notauto.PersonService">
+        <!--下面是手动配置personService和userService两者的依赖关系(personService依赖userService)，并通过setter方法注入到personService中-->
+        <!--<property name="userService">
+            <ref bean="userService"/>
+        </property>-->
+    </bean>
+</beans>
