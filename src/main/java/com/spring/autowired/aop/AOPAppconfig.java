@@ -1,4 +1,4 @@
-package com.spring.aop;
+package com.spring.autowired.aop;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * 添加了@Configuration主要是使用了动态代理来实现这种结果的
  */
 @Configuration
-@ComponentScan("com.spring.autowired.auto")
+@ComponentScan("com.spring.autowired.aop")
 public class AOPAppconfig {
 
 }
