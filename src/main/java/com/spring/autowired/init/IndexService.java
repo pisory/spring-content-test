@@ -10,8 +10,9 @@ public class IndexService implements InitializingBean {
     @Autowired
     private DetailService detailService;
 
-  /*  public IndexService() {
+    /*public IndexService(DetailService detailService) {
         System.out.println("this is IndexService");
+        this.detailService = detailService;
     }*/
 
    @PostConstruct
@@ -23,16 +24,12 @@ public class IndexService implements InitializingBean {
         System.out.println("this is init-method");
     }
 
-    public void getService(){
-        System.out.println(detailService);
-    }
-
-    public void setDetailService(DetailService detailService) {
-        this.detailService = detailService;
-    }
-
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("this is InitializingBean properties set method");
+    }
+
+    public void getDetailService(){
+        System.out.println(detailService);
     }
 }

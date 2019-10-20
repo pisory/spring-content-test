@@ -14,6 +14,6 @@ public class InitTest {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-init.xml");
         /*AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(InitAppConfig.class);*/
         IndexService bean = applicationContext.getBean(IndexService.class);
-        bean.getService();
+        bean.getDetailService();
     }
 }

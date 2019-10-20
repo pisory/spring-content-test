@@ -7,7 +7,7 @@
            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
-       default-autowire="byType"
+
 >
     <!-- @PostContruct要生效，需要加上下面的context:component-scan,可能跟spring版本不同有关系  -->
     <context:component-scan base-package="com.spring.autowired.init">
