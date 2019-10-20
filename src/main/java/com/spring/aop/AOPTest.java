@@ -1,7 +1,6 @@
 package com.spring.aop;
 
 import com.spring.aop.dao.UserDao;
-import com.spring.aop.proxy.FactoryProxy;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
