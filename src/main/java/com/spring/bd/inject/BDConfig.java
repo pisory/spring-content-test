@@ -1,4 +1,4 @@
-package com.spring.bd;
+package com.spring.bd.inject;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@ComponentScan("com.spring.bd")
+@ComponentScan("com.spring.bd.inject")
 public class BDConfig {
 }

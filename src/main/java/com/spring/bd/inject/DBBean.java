@@ -1,4 +1,4 @@
-package com.spring.bd;
+package com.spring.bd.inject;
 
 import org.springframework.stereotype.Component;
 
