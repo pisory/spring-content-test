@@ -15,10 +15,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class TeacherService implements BeanFactoryPostProcessor {
-    public static void main(String[] args) {
-
-    }
-
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         GenericBeanDefinition studentService = (GenericBeanDefinition) beanFactory.getBeanDefinition("studentService");

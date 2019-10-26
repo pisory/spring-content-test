@@ -12,8 +12,5 @@ public class AutoTest {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutoAppconfig.class);
         System.out.println(applicationContext.getBean(AutoAppconfig.class));
-
-        //使用AOP，来模拟一个mybatis
-
     }
 }
