@@ -19,5 +19,6 @@ public class CyclicReferencedTest {
         beanFactory.setAllowCircularReferences(false);
         applicationContext.refresh();
         System.out.println(applicationContext.getBean("orderService"));
+
     }
 }
