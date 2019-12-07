@@ -20,7 +20,7 @@ public class ReaderTest {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             /**
-             getResource()方法会去classpath下找这个文件，获取到url resource, 得到这个资源后，调用url.getFile获取到 文件 的绝对路径
+             * getResource()方法会去classpath下找这个文件，获取到url resource, 得到这个资源后，调用url.getFile获取到 文件 的绝对路径
              */
             URL url = classLoader.getResource("test/test.txt");
             /**

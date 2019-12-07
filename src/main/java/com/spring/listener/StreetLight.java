@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * 观察者模式
  * 被观察者要持有监听的观察者引用
+ * 在这里，Card是被观察者，TurnEvent是观察者
  * @author dada
  * @date 2019/11/4
  * @description
